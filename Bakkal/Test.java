@@ -1,5 +1,3 @@
-package Bakkal;
-
 public class Test {
     public static void main(String[] args) {
 
@@ -31,6 +29,7 @@ public class Test {
         istanbulToptancilari.sehireToptanciEkle(toptanci2);
         istanbulToptancilari.sehirdekiToplamToptanciSayisi();
         bakkal1.bakkalYasalBelgeleriGoster();
+        bakkal3.SatisUcretiHesapla(false,100,10);
 
     }
 }

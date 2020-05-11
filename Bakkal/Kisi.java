@@ -1,5 +1,3 @@
-package Bakkal;
-
 public abstract class Kisi
 {
     private String isim;

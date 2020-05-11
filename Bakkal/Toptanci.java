@@ -1,5 +1,3 @@
-package Bakkal;
-
 import java.util.ArrayList;
 
 public class Toptanci extends Kisi {

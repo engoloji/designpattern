@@ -1,5 +1,3 @@
-package Bakkal;
-
 import java.util.ArrayList;
 
 public class Bakkalci extends Kisi implements BakkalYasalKosullar {
@@ -16,7 +14,20 @@ public class Bakkalci extends Kisi implements BakkalYasalKosullar {
         this.bakkalAdi = bakkalAdi;
         calisilanToptancilar = new ArrayList<>();
     }
-
+    public void SatisUcretiHesapla(boolean dukkanKirami, double malAlim , double karMiktari)
+    {
+        double totalFiyat=0;
+        if (dukkanKirami==true)
+        {
+            totalFiyat+=malAlim+(((malAlim)*karMiktari)/100);
+            System.out.println("Satış Fiyatı = > " + totalFiyat);
+        }
+        else
+        {
+            totalFiyat+=malAlim+(((malAlim)*karMiktari+15)/100);
+            System.out.println("Satış Fiyatı = > " + totalFiyat);
+        }
+    }
     @Override
     void pozisyonunuSöyle() //abstract olarak tanımladığım metot.
     {
